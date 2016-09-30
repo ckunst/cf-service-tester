@@ -55,7 +55,7 @@ public class AmqpTestMessageConsumer implements MessageListener {
 					appId, messageId, msgTime);
 		}
 		else {
-			log.info("({}) RCV from:[{}] id:[{}] at {} -> {}", 
+			log.debug("({}) RCV from:[{}] id:[{}] at {} -> {}", 
 					utils.getReceivedKey(instanceIndex), 
 					appId, messageId, 
 					msgTime, new String(message.getBody()));

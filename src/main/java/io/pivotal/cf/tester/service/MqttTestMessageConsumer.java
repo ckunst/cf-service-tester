@@ -23,7 +23,7 @@ public class MqttTestMessageConsumer implements MqttCallback {
 
 	@Override
 	public void messageArrived(String topic, MqttMessage message) throws Exception {
-		log.info("({}) RCV MQTT from:[{}] id:[{}] at {} -> {}", 
+		log.debug("({}) RCV MQTT from:[{}] id:[{}] at {} -> {}", 
 				utils.getReceivedKey(0), 
 				new String(message.getPayload()));
 	}

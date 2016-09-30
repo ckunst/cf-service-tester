@@ -58,7 +58,7 @@ public class MqttTestMessagePublisher extends AbstractTestMessagePublisher {
 				token.waitForCompletion();
 			}
 			
-			log.info("{} [{}] {}", instanceName, 
+			log.debug("{} [{}] {}", instanceName, 
 					messageId, messagePayload);
 			
 			stateService.setRabbitUp();

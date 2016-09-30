@@ -88,7 +88,7 @@ public class AmqpTestMessagePublisher extends AbstractTestMessagePublisher {
 			rabbitTemplate.send(rabbitExchangeName, rabbitQueueName, 
 					amqpMsg, new CorrelationData(messageId));
 			
-			log.info("{} [{}] {}", 
+			log.debug("{} [{}] {}", 
 					instanceName, 
 					amqpMsg.getMessageProperties().getMessageId(),
 					messagePayload);
